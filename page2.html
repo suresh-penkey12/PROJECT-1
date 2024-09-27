@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+      body{
+        display: grid;
+        gap:20px;
+        color:rgb(133, 93, 116);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        @media screen and (max-width:425px){
+       .details{
+  border:1px solid;
+  max-width: fit-content;
+  background-color: orange;
+  color: white;
+  border-radius: 3px;
+  padding:2%;
+  border: none;
+}
+.first_container {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 250%;
+  width: 100%;
+  height:15vh;
+  color: orange;
+  border: none;
+}
+.A{
+  position:relative;
+  left:4%;
+}
+.ham{
+  background-color: white;
+      width: 150px;
+      position: absolute;
+      right: 0;
+      height: 200px; 
+      max-height: 0; 
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 25px;
+      text-align: center;
+      transition: max-height 0.4s ease;
+      
+}
+  .ham div:hover{
+  background-color: chocolate;
+ }
+ 
+ .icon{
+  cursor: pointer;
+ }
+
+#check{
+  display: none;
+}
+
+ #check:checked ~ .ham{
+  display: flex;
+  max-height: 200px;
+ }
+ .B1 a{
+  text-decoration: none;
+  color: black;
+}
+.B1:active{
+  background-color: rgb(191, 146, 63);
+  color: white;
+}
+.B{
+  display: none;
+}
+.C{
+  position: relative;
+  right:2%;
+  position: sticky;
+  top:0;
+}
+.second_container{
+    border:2px solid;
+    height:50%;
+    border:none;
+    border: none;
+}
+img{
+    /* height:100%; */
+    width:100%;
+}
+.third_container{
+    display:grid;
+    grid-template-columns: repeat(1fr);
+    gap:20px;
+}
+.D1{
+    display:grid;
+    gap:20px;
+    font-size: 120%;
+}
+.D2{
+    display:grid;
+    gap:20px;
+    font-size: 120%;
+}
+.fourth_container{
+    display:grid;
+    gap:20px;
+    font-size: 120%;
+}
+.fifth_container{
+    display:grid;
+    grid-template-columns: repeat(1fr);
+    gap:20px;
+}
+.X{
+    display: grid;
+    gap:20px;
+    font-size: 120%;
+}
+.E{
+  border: 2px solid;
+  width:100%;
+  max-height:min-content;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  justify-items: center;
+  align-content: center;
+  border: none;
+}
+.E5{
+  border:1px solid;
+  height:100%;
+  width:80%;
+  font-size: 140%;
+  display:flex;
+  flex-direction: column;
+  gap:3%;
+  border: none;
+}
+.E6{
+  border: 1px solid;
+  height:50%;
+  border: none;
+}
+.e1{
+  color: rgb(173, 118, 17);
+}
+.E5{
+  height:90vh;
+  justify-content: center;
+}
+.E4{
+  border: 1px solid;
+  font-size: 140%;
+  display:grid;
+  gap:40px;
+  justify-content: center;
+  align-content: center;
+  border: none;
+
+}
+.G{
+  border:2px solid;
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(1fr);
+  font-size: 170%;
+  background-image: url(./classic-pattern-bg.png);
+  border: none;
+}
+.G1{
+  padding:10px;
+}
+.G2{
+  display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.G5{
+  border:1px solid;
+  display:grid;
+  gap: 20px;
+  font-size:80%;
+  border: none;
+}
+.G11{
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border: none;
+}
+.g{
+  height:20vh;
+  width:100%;
+}
+.s{
+  border: 1px solid;
+  height:40vh;
+  display:grid;
+  grid-template-columns: repeat(1fr);
+  border: none;
+}
+.im{
+  width:100%;
+}
+.G6{
+  background-color:rgb(179, 128, 179);
+  display: grid;
+  gap:20px;
+  width:90%;
+  position:relative;
+  left:5%;
+  color: black;
+  font-size: 70%;;
+}
+.G3{
+  font-size: 70%;
+}
+.G7{
+  font-size: 90%;;
+}
+.last{
+  background-image: url(./classic-pattern-bg.png);
+  border: none;
+}
+        }
+
+        @media screen and (min-width:425px) and (max-width:768px){
+       .details{
+  border:1px solid;
+  max-width: fit-content;
+  background-color: orange;
+  color: white;
+  border-radius: 3px;
+  padding:2%;
+  border: none;
+}
+.first_container {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 250%;
+  width: 100%;
+  height:15vh;
+  color: orange;
+  border: none;
+}
+.A{
+  position:relative;
+  left:4%;
+}
+.ham{
+  background-color: white;
+      width: 150px;
+      position: absolute;
+      right: 0;
+      height: 200px; 
+      max-height: 0; 
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 25px;
+      text-align: center;
+      transition: max-height 0.4s ease;
+      
+}
+  .ham div:hover{
+  background-color: chocolate;
+ }
+ 
+ .icon{
+  cursor: pointer;
+ }
+
+#check{
+  display: none;
+}
+
+ #check:checked ~ .ham{
+  display: flex;
+  max-height: 200px;
+ }
+ .B1 a{
+  text-decoration: none;
+  color: black;
+}
+.B1:active{
+  background-color: rgb(191, 146, 63);
+  color: white;
+}
+.B{
+  display: none;
+}
+.C{
+  position: relative;
+  right:2%;
+  position: sticky;
+  top:0;
+}
+.second_container{
+    border:2px solid;
+    height:50%;
+    border:none;
+    border: none;
+}
+img{
+    height:100%;
+    width:100%;
+}
+.third_container{
+    display:grid;
+    grid-template-columns: repeat(1fr);
+    gap:20px;
+}
+.D1{
+    display:grid;
+    gap:20px;
+    font-size: 120%;
+}
+.D2{
+    display:grid;
+    gap:20px;
+    font-size: 120%;
+}
+.fourth_container{
+    display:grid;
+    gap:20px;
+    font-size: 120%;
+}
+.fifth_container{
+    display:grid;
+    grid-template-columns: repeat(1fr);
+    gap:20px;
+}
+.X{
+    display: grid;
+    gap:20px;
+    font-size: 120%;
+}
+.E{
+  border: 2px solid;
+  width:100%;
+  max-height:min-content;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  align-content: center;
+  border: none;
+}
+.E5{
+  border:1px solid;
+  height:100%;
+  width:80%;
+  font-size: 140%;
+  display:flex;
+  flex-direction: column;
+  gap:3%;
+  border: none;
+}
+.E6{
+  border: 1px solid;
+  height:50%;
+  border: none;
+}
+.e1{
+  color: rgb(173, 118, 17);
+}
+.E5{
+  height:90vh;
+  justify-content: center;
+}
+.E4{
+  border: 1px solid;
+  font-size: 140%;
+  display:grid;
+  gap:40px;
+  justify-content: center;
+  align-content: center;
+  border: none;
+
+}
+.G{
+  border:2px solid;
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(1fr);
+  font-size: 170%;
+  background-image: url(./classic-pattern-bg.png);
+  border: none;
+}
+.G1{
+  padding:10px;
+}
+.G2{
+  display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.G5{
+  border:1px solid;
+  display:grid;
+  gap: 20px;
+  font-size:80%;
+  border: none;
+}
+.G11{
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border: none;
+}
+.g{
+  height:20vh;
+  width:100%;
+}
+.s{
+  border: 1px solid;
+  height:40vh;
+  display:grid;
+  grid-template-columns: repeat(1fr);
+  border: none;
+}
+.im{
+  width:100%;
+}
+.G6{
+  background-color:rgb(179, 128, 179);
+  display: grid;
+  gap:20px;
+  width:90%;
+  position:relative;
+  left:5%;
+  color: black;
+  font-size: 70%;;
+}
+.G3{
+  font-size: 70%;
+}
+.G7{
+  font-size: 90%;;
+}
+.last{
+  background-image: url(./classic-pattern-bg.png);
+  border: none;
+}
+.G10{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+        }
+
+        @media screen and (min-width:768px){
+       .details{
+  border:1px solid;
+  max-width: fit-content;
+  background-color: orange;
+  color: white;
+  border-radius: 3px;
+  padding:2%;
+  border: none;
+}
+.first_container {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 250%;
+  width: 100%;
+  height:15vh;
+  color: orange;
+  border: none;
+}
+.A{
+  position:relative;
+  left:4%;
+}
+.B1 a{
+  text-decoration: none;
+  color: black;
+}
+.B1:active{
+  background-color: rgb(191, 146, 63);
+  color: white;
+}
+.B{
+    font-size: 60%;
+    display: flex;
+    position:relative;
+    right:8%;
+    gap:60px;
+    color: black;
+}
+.B1{
+    border: 1px solid;
+    text-align: center;
+    width:5vw;
+    padding:10px;
+    border-radius:5%;
+    border: none;
+  }
+  .B1:hover{
+    background-color: rgb(191, 146, 63);
+    color: white;
+  }
+.C{
+  position: relative;
+  right:2%;
+  position: sticky;
+  top:0;
+  display:none;
+}
+.second_container{
+    border:2px solid;
+    height:100%;
+    border:none;
+    border: none;
+}
+img{
+    height:100%;
+    width:100%;
+}
+.third_container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:20px;
+}
+.D1{
+    border: 1px solid;
+    display:grid;
+    gap:20px;
+    font-size: 120%;
+    justify-content: center;
+    /* align-content: center; */
+    border: none;
+}
+.D2{
+  border: 1px solid;
+    display:grid;
+    gap:20px;
+    grid-column: 2/4;
+    font-size: 120%;
+    border: none;
+}
+
+.fourth_container{
+    display:grid;
+    gap:20px;
+    font-size: 120%;
+    padding:30px;
+}
+.fifth_container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    padding:30px;
+}
+.X{
+    display: grid;
+    gap:20px;
+    font-size: 120%;
+}
+.E{
+  border: 2px solid;
+  width:100%;
+  max-height:min-content;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+  align-content: center;
+  border: none;
+}
+.E5{
+  border:1px solid;
+  height:100%;
+  width:80%;
+  font-size: 140%;
+  display:flex;
+  flex-direction: column;
+  gap:3%;
+  border: none;
+}
+.E6{
+  border: 1px solid;
+  height:50%;
+  border: none;
+}
+.e1{
+  color: rgb(173, 118, 17);
+}
+.E5{
+  height:90vh;
+  justify-content: center;
+}
+.E4{
+  border: 1px solid;
+  font-size: 140%;
+  display:grid;
+  gap:40px;
+  justify-content: center;
+  align-content: center;
+  border: none;
+
+}
+.G{
+    border:2px solid;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(1fr);
+    font-size: 170%;
+    background-image: url(./classic-pattern-bg.png);
+    border: none;
+  }
+  .G5{
+    border:1px solid;
+    display:grid;
+    gap: 20px;
+    font-size:80%;
+    border: none;
+    padding:40px;
+  }
+  .G11{
+    border: 1px solid;
+    /* height:20vh; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: none;
+  }
+  .g{
+    height:20vh;
+    width:100%;
+  }
+  .s{
+    border: 1px solid;
+    height:40vh;
+    display:grid;
+    grid-template-columns: repeat(1fr);
+    border: none;
+  }
+  .im{
+    width:100%;
+  }
+  .G2{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  .G6{
+    background-color:rgb(179, 128, 179);
+    display: grid;
+    gap:10px;
+    width:100%;
+    color: black;
+    font-size: 80%;
+    position: relative;
+    bottom:120px;
+    padding:10px;
+  }
+  .G3{
+    font-size: 70%;
+  }
+  .G7{
+    font-size: 90%;;
+  }
+  .G10{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="first_container">
+      <div class="A">Classic</div>
+      <div class="B">
+            <div class="B1"><a href="./index.html">Home</a></div>
+            <div class="B1">About</div>
+            <div class="B1"><a href="./page3.html">Blog</a></div>
+            <div class="B1"><a href="./page4.html">Contact</a></div>
+      </div>
+      <div class="C">
+            <input type="checkbox" id="check">
+            <label for="check"> <div class="icon"><i class="fa-solid fa-bars"></i></div></label>
+            <div class="ham" style="border-radius: 10px;">
+              <div class="B1"><a href="./index.html">Home</a></div>
+              <div class="B1" style="color: black;">About</div>
+              <div class="B1"><a href="./page3.html">Blog</a></div>
+              <div class="B1"><a href="./page4.html">Contact</a></div>
+            </div>
+      </div>
+    </div>
+
+    <!-- second container -->
+
+    <div class="second_container">
+      <img class="home2" src="./tm-about-img.jpg" alt="" />
+    </div>
+
+    <!-- third container -->
+    <div class="third_container">
+      <div class="D1">
+        <div style="color: orange; font-size: 150%">Sidebar Links</div>
+        <div><a href="">Lorem ipsum dolor sit</a></div>
+        <div><a href="">Tincidunt non faucibus placerat</a></div>
+        <div><a href="">Vestibulum tempor ac lectus</a></div>
+        <div><a href="">Fusce non turpis euismod</a></div>
+        <div><a href="">Nam in augue consectetur</a></div>
+        <div><a href="">Text Link Color #006699</a></div>
+      </div>
+      <div class="D2">
+        <div style="color: orange; font-size: 150%">
+          Pellentesque fermentum mauris
+        </div>
+        <div>
+          Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien
+        </div>
+        <div>
+          Quisque vel sem eu turpis ullamcorper euismod. Praesent quis nisi ac
+          augue luctus viverra. Sed et dui nisi. Fusce vitae dapibus justo.
+          Pellentesque accumsan est ac posuere imperdiet. Curabitur eros mi,
+          lacinia at euismod quis, dapibus vel ligula. Ut sodales erat vitae
+          nunc tempor mollis. Donec tempor lobortis tortor, in feugiat massa
+          facilisis sed. Ut dignissim viverra pretium. In eu justo maximus
+          turpis feugiat finibus scelerisque nec eros.
+        </div>
+        <div>
+          Classic Template provides a great flexibility to arrange the content
+          in any way you like. Please tell your friends about templatemo. Nam
+          sem neque, finibus id sem pharetra, cursus porttitor ligula. Praesent
+          aliquam fermentum dui, vitae venenatis libero vulputate ac. Fusce
+          bibendum scelerisque magna eget iaculis.
+        </div>
+      </div>
+    </div>
+    <!-- fourth container -->
+    <div class="fourth_container">
+      <div style="color: orange; font-size: 160%">
+        Pellentesque fermentum mauris
+      </div>
+      <div>Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</div>
+      <div>
+        Nulla ultrices nibh ac accumsan lobortis. Nulla facilisi. Praesent velit
+        ante, congue ac dignissim in, vehicula sit amet urna. Fusce in dapibus
+        quam, eget finibus velit. Nullam erat odio, vulputate id est ut,
+        consequat rutrum justo. Vivamus vel leo vel nunc tincidunt mattis. Sed
+        neque diam, semper suscipit dictum a, sodales ac metus. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos. Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor
+        tincidunt felis et feugiat. Vivamus fermentum ligula justo, sit amet
+        blandit nisl volutpat id.
+      </div>
+    </div>
+    <!-- fifith container -->
+    <div class="fifth_container">
+      <div class="X">
+        <div style="color: orange; font-size: 160%">
+          Pellentesque fermentum mauris
+        </div>
+        <div>
+          Vivamus vel leo vel nunc tincidunt mattis. Sed neque diam, semper
+          suscipit dictum a, sodales ac metus. Class aptent taciti sociosqu ad
+          litora torquent per conubia nostra, per inceptos himenaeos. Morbi vel
+          pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et
+          feugiat.
+        </div>
+        <div>
+          Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id.
+          Fusce sagittis ultricies felis, non luctus mauris lacinia quis. Ut
+          fringilla lacus ac tempor ullamcorper. Mauris iaculis placerat ex et
+          mattis.
+        </div>
+      </div>
+      <div class="X">
+        <div style="color: orange; font-size: 160%">
+          Pellentesque fermentum mauris
+        </div>
+        <div>
+          Fusce in dapibus quam, eget finibus velit. Nullam erat odio, vulputate
+          id est ut, consequat rutrum justo. Vivamus vel leo vel nunc tincidunt
+          mattis. Sed neque diam, semper suscipit dictum a, sodales ac metus.
+          Quisque vel sem eu turpis ullamcorper euismod. Praesent quis nisi ac
+          augue luctus viverra. Sed et dui nisi.
+        </div>
+        <div>
+          Fusce vitae dapibus justo. Pellentesque accumsan est ac posuere
+          imperdiet. Curabitur eros mi, lacinia at euismod quis, dapibus vel
+          ligula. Ut sodales erat vitae nunc tempor mollis.
+        </div>
+      </div>
+    </div>
+    <!-- sixth container -->
+    <div class="E">
+
+      <div class="E1 E5">
+        <div class="E6">
+          <img style="border-radius: 100%; width: 100%; height: 100%;" src="./tm-img-310x180-1.jpg" alt=""/>
+        </div>
+        <div><div class="e1">Lorem ipsum dolor #1</div></div>
+        <div>
+          <div>Aenean cursus tellus mauris, quis</div>
+          <div>consequat mauris dapibus id. Donec</div>
+          <div>scelerisque porttitor pharetra</div>
+        </div>
+        <div class="details">Details</div>
+      </div>
+
+      <div class="E2 E5">
+        <div class="E6">
+          <img
+            style="border-radius: 100%; width: 100%; height: 100%;"
+            src="./tm-img-310x180-2.jpg"
+            alt=""
+          />
+        </div>
+        <div><div class="e1">Lorem ipsum dolor #1</div></div>
+        <div>
+          <div>Aenean cursus tellus mauris, quis</div>
+          <div>consequat mauris dapibus id. Donec</div>
+          <div>scelerisque porttitor pharetra</div>
+        </div>
+        <div class="details">Read More</div>
+      </div>
+      <div class="E3 E5">
+        <div class="E6">
+          <img
+            style="border-radius: 100%; width: 100%; height: 100%;"
+            src="./tm-img-310x180-3.jpg"
+            alt=""
+          />
+        </div>
+        <div><div class="e1">Lorem ipsum dolor #1</div></div>
+        <div>
+          <div>Aenean cursus tellus mauris, quis</div>
+          <div>consequat mauris dapibus id. Donec</div>
+          <div>scelerisque porttitor pharetra</div>
+        </div>
+        <div class="details">Details</div>
+      </div>
+      <div class="E4">
+        <div><a href="">Duis sit amet tristique #1</a></div>
+        <div>Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</div>
+        <div><hr></div>
+        <div><a href="">Duis sit amet tristique #2</a></div>
+        <div>Vestibulum arcu erat, lobortis sit amet tellus ut, semper tristique nibh. Nunc in molestie elit.</div>
+      </div>
+    </div>
+    <!-- seventh container -->
+    <div class="G">
+        <div class="G10">
+        <div class="G1 G5">
+            <div style="font-size: 140%; color: orange;">Proin eu posuere felis</div>
+            <div class="G6">
+            <div>Classic is free HTML CSS website template provided by templatemo for everyone. Feel free to use it.</div>
+            <div>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</div>
+            <div>Danny Egg (Executive)</div>
+            </div>
+        </div>
+        <div class="G2 G5">
+            <div style="font-size: 140%; color: orange;">Nulla tortor dolor</div>
+            <div><a href="">Tincidunt non faucibus</a></div>
+            <div><a href="">Vestibulum tempor</a></div>
+            <div><a href="">Fusce non turpis euismod</a></div>
+            <div><a href="">Lorem ipsum dolor sit</a></div>
+            <div><a href="">Nam in augue consectetur</a></div>
+            <div><a href="">Text Link Color #CCCC66</a></div>
+        </div>
+        <div class="G3 G5">
+            <div style="font-size: 140%; color: orange;">Etiam mollis ornare</div>
+            <div>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</div>
+            <div><hr></div>
+            <div>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</div>
+            <div><hr></div>
+            <div>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</div>
+            <div class="details">READ MORE</div>
+        </div>
+        <div class="G4 G5">
+            <div style="font-size: 140%; color: orange;">Fusce non turpis</div>
+            <div class="G11">
+                <div class="g"><img src="./tm-img-100x100-1.jpg" alt=""></div>
+                <div class="g"><img src="./tm-img-100x100-2.jpg" alt=""></div>
+                <div class="g"><img src="./tm-img-100x100-3.jpg" alt=""></div>
+                <div class="g"><img src="./tm-img-100x100-4.jpg" alt=""></div>
+                <div class="g"><img src="./tm-img-100x100-5.jpg" alt=""></div>
+                <div class="g"><img src="./tm-img-100x100-6.jpg" alt=""></div>
+            </div>
+            <div>Curabitur dui massa, aliquam quis mi sed, tempor vulputate tellus. Sed vestibulum non neque.</div>
+            <div class="details G7">BROWSE</div>
+        </div>
+        </div>
+        <div style="font-size: 80%;color: orange; padding:20px;">Copyright 2016 Your Company Name</div>
+    </div>
+</div>
+  </body>
+</html>

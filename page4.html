@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+      body{
+        color:rgb(133, 93, 116);
+        display:grid;
+        gap:30px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        @media screen and (max-width:425px){
+.details{
+  border:1px solid;
+  max-width: fit-content;
+  background-color: orange;
+  color: white;
+  border-radius: 3px;
+  padding:2%;
+  border: none;
+}
+.first_container {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 250%;
+  width: 100%;
+  height:15vh;
+  color: orange;
+  border: none;
+}
+.A{
+  position:relative;
+  left:4%;
+}
+.ham{
+  background-color: white;
+      width: 150px;
+      position: absolute;
+      right: 0;
+      height: 200px; 
+      max-height: 0; 
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 25px;
+      text-align: center;
+      transition: max-height 0.4s ease;
+      
+}
+  .ham div:hover{
+  background-color: chocolate;
+ }
+ 
+ .icon{
+  cursor: pointer;
+ }
+
+#check{
+  display: none;
+}
+
+ #check:checked ~ .ham{
+  display: flex;
+  max-height: 200px;
+ }
+ .B{
+  display: none;
+    
+}
+.B1 a{
+    text-decoration: none;
+    color: black;
+  }
+  .B1:active{
+    background-color: rgb(191, 146, 63);
+    color: white;
+  }
+.C{
+  position: relative;
+  right:2%;
+  position: sticky;
+  top:0;
+}
+.second_container{
+    border:2px solid;
+    /* height:50%; */
+    border:none;
+    border: none;
+}
+img{
+    height:100%;
+    width:100%;
+}
+.G{
+  border:2px solid;
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(1fr);
+  font-size: 170%;
+  background-image: url(./classic-pattern-bg.png);
+  border: none;
+}
+.G1{
+  padding:10px;
+}
+.G5{
+  border:1px solid;
+  display:grid;
+  gap: 20px;
+  font-size:80%;
+  border: none;
+}
+.G11{
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border: none;
+}
+.g{
+  height:20vh;
+  width:100%;
+}
+.s{
+  border: 1px solid;
+  height:40vh;
+  display:grid;
+  grid-template-columns: repeat(1fr);
+  border: none;
+}
+.im{
+  width:100%;
+}
+.G6{
+  background-color:rgb(179, 128, 179);
+  display: grid;
+  gap:20px;
+  width:90%;
+  position:relative;
+  left:5%;
+  color: black;
+  font-size: 70%;;
+}
+.G3{
+  font-size: 70%;
+}
+.G7{
+  font-size: 90%;;
+}
+.last{
+  background-image: url(./classic-pattern-bg.png);
+  border: none;
+}
+.third_container{
+    border:2px solid;
+    display:grid;
+    grid-template-columns: repeat(1fr);
+    border:none;
+}
+.part1{
+    font-size: 140%;
+    display:grid;
+    gap:15px;
+}
+.part2{
+  font-size: 120%;
+}
+.y{
+  display:grid;
+  gap:5px;
+}
+.right_first{
+    border:2px solid;
+    display:grid;
+    grid-template-columns: repeat(1fr);
+    border:none;
+}
+.right_second{
+    border:2px solid;
+    max-width:fit-content;
+    border:none;
+}
+.F223{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap:20px;
+  }
+  .F224{
+    color: orange;
+    font-size: 120%;
+  }
+        }
+        @media screen and (min-width:425px) and (max-width:768px){
+            .details{
+  border:1px solid;
+  max-width: fit-content;
+  background-color: orange;
+  color: white;
+  border-radius: 3px;
+  padding:2%;
+  border: none;
+}
+.first_container {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 250%;
+  width: 100%;
+  height:15vh;
+  color: orange;
+  border: none;
+}
+.A{
+  position:relative;
+  left:4%;
+}
+.ham{
+  background-color: white;
+      width: 150px;
+      position: absolute;
+      right: 0;
+      height: 200px; 
+      max-height: 0; 
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 25px;
+      text-align: center;
+      transition: max-height 0.4s ease;
+      
+}
+  .ham div:hover{
+  background-color: chocolate;
+ }
+ 
+ .icon{
+  cursor: pointer;
+ }
+
+#check{
+  display: none;
+}
+
+ #check:checked ~ .ham{
+  display: flex;
+  max-height: 200px;
+ }
+ .B1 a{
+    text-decoration: none;
+    color: black;
+  }
+  .B1:active{
+    background-color: rgb(191, 146, 63);
+    color: white;
+  }
+.B{
+  display: none;
+}
+.C{
+  position: relative;
+  right:2%;
+  position: sticky;
+  top:0;
+}
+.second_container{
+    border:2px solid;
+    height:50%;
+    border:none;
+    border: none;
+}
+img{
+    height:100%;
+    width:100%;
+}
+.G{
+  border:2px solid;
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(1fr);
+  font-size: 170%;
+  background-image: url(./classic-pattern-bg.png);
+  border: none;
+}
+.G1{
+  padding:10px;
+}
+.G5{
+  border:1px solid;
+  display:grid;
+  gap: 20px;
+  font-size:80%;
+  border: none;
+}
+.G11{
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border: none;
+}
+.g{
+  height:20vh;
+  width:100%;
+}
+.s{
+  border: 1px solid;
+  height:40vh;
+  display:grid;
+  grid-template-columns: repeat(1fr);
+  border: none;
+}
+.im{
+  width:100%;
+}
+.G6{
+  background-color:rgb(179, 128, 179);
+  display: grid;
+  gap:20px;
+  width:90%;
+  position:relative;
+  left:5%;
+  color: black;
+  font-size: 70%;;
+}
+.G3{
+  font-size: 70%;
+}
+.G7{
+  font-size: 90%;;
+}
+.last{
+  background-image: url(./classic-pattern-bg.png);
+  border: none;
+}
+.G10{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.third_container{
+    border:2px solid;
+    display:grid;
+    grid-template-columns: repeat(1fr);
+     border:none;
+}
+.part1{
+    font-size: 140%;
+    display:grid;
+    gap:15px;
+}
+.part2{
+  font-size: 120%;
+}
+.y{
+  display:grid;
+  gap:5px;
+}
+.right_first{
+    border:2px solid;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    border:none;
+}
+.right_second{
+    border:2px solid;
+}
+.F223{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+  }
+  .F224{
+    color: orange;
+    font-size: 120%;
+  }
+        }
+        @media screen and (min-width:768px){
+            .details{
+  border:1px solid;
+  max-width: fit-content;
+  background-color: orange;
+  color: white;
+  border-radius: 3px;
+  padding:2%;
+  border: none;
+}
+.first_container {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 250%;
+  width: 100%;
+  height:15vh;
+  color: orange;
+  border: none;
+}
+.A{
+  position:relative;
+  left:4%;
+}
+.B{
+  /* display: none; */
+    font-size: 60%;
+    display: flex;
+    position:relative;
+    right:8%;
+    gap:60px;
+    color: black;
+}
+.B1{
+  border: 1px solid;
+    text-align: center;
+    width:5vw;
+    padding:10px;
+    border-radius:5%;
+    border: none;
+}
+.B1 a{
+    text-decoration: none;
+    color: black;
+  }
+  .B1:active{
+    background-color: rgb(191, 146, 63);
+    color: white;
+  }
+  .B1:hover{
+    background-color: rgb(191, 146, 63);
+    color: white;
+  }
+.C{
+  position: relative;
+  right:2%;
+  position: sticky;
+  top:0;
+  display:none;
+}
+.second_container{
+    border:2px solid;
+    /* height:50%; */
+    border:none;
+    border: none;
+}
+img{
+    height:100%;
+    width:100%;
+}
+.G{
+    border:2px solid;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(1fr);
+    font-size: 170%;
+    background-image: url(./classic-pattern-bg.png);
+    border: none;
+  }
+  .G5{
+    border:1px solid;
+    display:grid;
+    gap: 20px;
+    font-size:80%;
+    border: none;
+    padding:40px;
+  }
+  .G11{
+    border: 1px solid;
+    /* height:20vh; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: none;
+  }
+  .g{
+    height:20vh;
+    width:100%;
+  }
+  .s{
+    border: 1px solid;
+    height:40vh;
+    display:grid;
+    grid-template-columns: repeat(1fr);
+    border: none;
+  }
+  .im{
+    width:100%;
+  }
+  .G2{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  .G6{
+    background-color:rgb(179, 128, 179);
+    display: grid;
+    gap:10px;
+    width:100%;
+    color: black;
+    font-size: 80%;
+    position: relative;
+    bottom:120px;
+    padding:10px;
+  }
+  .G3{
+    font-size: 70%;
+  }
+  .G7{
+    font-size: 90%;
+  }
+  .G10{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+.third_container{
+    border:2px solid;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    border:none;
+}
+.part1{
+    font-size: 140%;
+    display:grid;
+    gap:15px;
+}
+.part2{
+  font-size: 120%;
+}
+.y{
+  display:grid;
+  gap:10px;
+}
+.right_first{
+    border:2px solid;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    border:none;
+}
+.right_second{
+    border:2px solid;
+    border:none;
+}
+.F223{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+  }
+  .F224{
+    color: orange;
+    font-size: 120%;
+    gap:20px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="first_container">
+        <div class="A">Classic</div>
+        <div class="B">
+          <div class="B1"><a href="./index.html">Home</a></div>
+          <div class="B1"><a href="./page2.html">About</a></div>
+          <div class="B1"><a href="./page3.html">Blog</a></div>
+          <div class="B1">Contact</div>
+        </div>
+        <div class="C">
+          <input type="checkbox" id="check">
+          <label for="check"> <div class="icon"><i class="fa-solid fa-bars"></i></div></label>
+          <div class="ham" style="border-radius: 10px;">
+            <div class="B1"><a href="./index.html">Home</a></div>
+            <div class="B1"><a href="./page2.html">About</a></div>
+            <div class="B1"><a href="./page3.html">Blog</a></div>
+            <div class="B1" style="color: black;">Contact</div>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="second_container">
+    <img src="./tm-contact-img.jpg" alt="">
+</div>
+<div class="third_container">
+    <div class="part1">
+        <div style="font-size: 140%; color: orange;">Pellentesque fermentum mauris</div>
+        <div>Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien. Quisque vel sem eu turpis ullamcorper euismod. Praesent quis nisi ac augue luctus viverra. Sed et dui nisi. Fusce vitae dapibus justo.</div>
+        <div>
+            <form>
+                <input style="height: 50px; width:70%; font-size: 100%;" type="text" required="please fill the name" placeholder="Name"><br><br>
+                <input style="height: 50px; width:70%; font-size: 100%;" type="email" placeholder="Email"><br><br>
+                <input style="height: 50px; width:70%; font-size: 100%;" type="text" placeholder="Subject"><br><br>
+                <input style="height: 50px; width:70%; font-size: 100%;" type="text" placeholder="Name"><br><br>
+                <textarea rows="10" cols="40" style="width: 100%;" name="Message">Message</textarea><br><br>
+                <button style="height: 50px; width:20%; font-size: 100%;">Submit</button>
+            </form>
+        </div>
+        <div>Pellentesque fermentum mauris</div>
+        <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5094.917942222524!2d73.91600357584367!3d18.563526371335232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1fff4905827%3A0xd79fac55d74c028a!2sThinkOwl%20India%20%7C%20ThinkOwl%20Offshore%20Software%20Private%20Limited!5e0!3m2!1sen!2sin!4v1727194976757!5m2!1sen!2sin" width="70%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div>Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id.</div>
+        <div>Donec mattis ipsum in erat viverra commodo. Proin sapien lacus, euismod eget nisl in, elementum posuere massa. Curabitur a odio eros. Cras aliquam lectus erat, non semper est volutpat eget. Ut eget erat tincidunt.</div>
+        <div>Detail</div>
+    </div>
+    <div class="part2">
+        <div class="right_first">
+            <div class="y">
+                <div style="color: orange; font-size: 150%;">Categories</div>
+                <div><a href="">Tincidunt non faucibus placerat</a></div>
+                <div><a href="">Vestibulum tempor ac lectus</a></div>
+                <div><a href="">Fusce non turpis euismod</a></div>
+                <div><a href="">Nam in augue consectetur</a></div>
+                <div><a href="">Text Link Color #006699</a></div>
+            </div>
+            <div class="y">
+                <div><img  src="./tm-img-310x180-1.jpg" alt=""></div>
+                <div><div>Lorem ipsum dolor #1</div></div>
+                <div><div>Aenean cursus tellus mauris, quis</div>
+                <div>consequat mauris dapibus id. Donec</div>
+                <div>scelerisque porttitor pharetra</div>
+                </div>
+                <div class="details">Details</div>
+            </div>
+            <div class="y">
+                <div style="color: orange; font-size: 150%;">Useful Links</div>
+                <div><a href="">Suspendisse sed dui nulla</a></div>
+                <div><a href="">Lorem ipsum dolor sit</a></div>
+                <div><a href="">Duiss nec purus et eros</a></div>
+                <div><a href="">Etiam pulvinar et ligula sed</a></div>
+                <div><a href="">Proin egestas eu felis et iaculis</a></div>
+            </div>
+            <div class="y">
+                <div><img src="./tm-img-310x180-2.jpg" alt=""></div>
+                <div><div>Lorem ipsum dolor #1</div></div>
+                <div><div>Aenean cursus tellus mauris, quis</div>
+                <div>consequat mauris dapibus id. Donec</div>
+                <div>scelerisque porttitor pharetra</div>
+            </div>
+                <div class="details">Read More</div>
+            </div>
+        </div>
+        <div class="right_second">
+            <div class="F224">Related Posts</div>
+                    <div class="F223">
+                        <div>
+                        <div><img src="./tm-img-240x120-1.jpg" alt=""></div>
+                        </div>
+                        <div>
+                        <div>Lorem ipsum dolor</div>
+                        <div>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</div>
+                        <div style="color: black;"><hr></div>
+                    </div>
+                        
+                    </div>
+                    <div class="F223">
+                        <div>
+                        <div><img src="./tm-img-240x120-2.jpg" alt=""></div>
+                        </div>
+                        <div>
+                        <div>Lorem ipsum dolor</div>
+                        <div>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</div>
+                        <div style="color: black;"><hr></div>
+                        </div>
+                        
+                    </div>
+                    <div class="F223">
+                        <div>
+                        <div><img class="im" src="./tm-img-240x120-3.jpg" alt=""></div>
+                        </div>
+                        <div>
+                        <div>Lorem ipsum dolor</div>
+                        <div>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</div>
+                        <div style="color: black;"><hr></div>
+                        </div>
+                        
+                </div>
+        </div>
+    </div>
+</div>
+<div class="G">
+    <div class="G10">
+    <div class="G1 G5">
+        <div style="font-size: 140%; color: orange;">Proin eu posuere felis</div>
+        <div class="G6">
+        <div>Classic is free HTML CSS website template provided by templatemo for everyone. Feel free to use it.</div>
+        <div>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</div>
+        <div>Danny Egg (Executive)</div>
+        </div>
+    </div>
+    <div class="G2 G5">
+        <div style="font-size: 140%; color: orange;">Nulla tortor dolor</div>
+        <div><a href="">Tincidunt non faucibus</a></div>
+        <div><a href="">Vestibulum tempor</a></div>
+        <div><a href="">Fusce non turpis euismod</a></div>
+        <div><a href="">Lorem ipsum dolor sit</a></div>
+        <div><a href="">Nam in augue consectetur</a></div>
+        <div><a href="">Text Link Color #CCCC66</a></div>
+    </div>
+    <div class="G3 G5">
+        <div style="font-size: 140%; color: orange;">Etiam mollis ornare</div>
+        <div>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</div>
+        <div><hr></div>
+        <div>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</div>
+        <div><hr></div>
+        <div>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</div>
+        <div class="details">READ MORE</div>
+    </div>
+    <div class="G4 G5">
+        <div style="font-size: 140%; color: orange;">Fusce non turpis</div>
+        <div class="G11">
+            <div class="g"><img src="./tm-img-100x100-1.jpg" alt=""></div>
+            <div class="g"><img src="./tm-img-100x100-2.jpg" alt=""></div>
+            <div class="g"><img src="./tm-img-100x100-3.jpg" alt=""></div>
+            <div class="g"><img src="./tm-img-100x100-4.jpg" alt=""></div>
+            <div class="g"><img src="./tm-img-100x100-5.jpg" alt=""></div>
+            <div class="g"><img src="./tm-img-100x100-6.jpg" alt=""></div>
+        </div>
+        <div>Curabitur dui massa, aliquam quis mi sed, tempor vulputate tellus. Sed vestibulum non neque.</div>
+        <div class="details G7">BROWSE</div>
+    </div>
+    </div>
+    <div style="font-size: 80%;color: orange; padding:20px;">Copyright 2016 Your Company Name</div>
+</div>
+</div>
+</body>
+</html>
